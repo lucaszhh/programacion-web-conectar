@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: red;
+}
+
+@keyframes fantasma {
+    0%{
+        
+    }
+    25%{
+        transform: translateY(20px);
+        
+    }
+    50%{
+        transform: rotate(400deg);
+    }
+    75%{
+        transform: scale(5) translateX(200px) rotate(40deg);
+    }
+    100%{
+        
+    }
+}
+
+.fantasma {
+    animation: fantasma 3s infinite;
+}
+
+@keyframes pacman {
+    0%{
+
+    }
+    30%{
+        transform: translate(200px);
+    }
+    45%{
+        transform: translate(200px, 500px) rotate(45deg);
+    }
+    75%{
+        transform: translate(60px, 200px) rotate(90deg);
+    }
+    100%{
+
+    }
+}
+
+.pacman {
+    animation: pacman 5s infinite;
+}
+
+
+
+
+
+

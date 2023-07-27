@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root{
+    --color_1: #CCE0FF;
+    --color_2: #1E161F;
+    --color_3: #D65862;
+    --color_4: #EBFFFF;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: var(--color_1);
+    color: var(--color_2);
+    border: none;
+    padding: 50px;
+    border-radius: 20px;
+    clip-path: polygon(50% 25%, 80% 10%, 97% 22%, 100% 52%, 79% 78%, 50% 100%, 20% 77%, 0 51%, 4% 19%, 20% 10%);
+    transition: all 500ms;
+}
+
+button:hover{
+    font-family: 'Creepster', cursive;
+    background-color: var(--color_3);
+    color: var(--color_4);
+
+}
+
+.touchme:hover{
+    animation: button 1s infinite;
+}
+
+
+@keyframes button{
+    0%{
+    }
+    25%{
+        transform: scale(0.3);
+    }
+    50%{
+        transform: scale(0.6);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+    
+    }
+}
+
+.cuadrado{
+    width: 100px;
+    height: 100px;
+    background-image: url("./cat.gif");
+    background-size: cover;
+    animation: cuadrado 2s;
+}
+
+@keyframes cuadrado{
+    50%{
+        transform: rotate(45deg);
+    }
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

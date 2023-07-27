@@ -1,0 +1,7 @@
+body{
+    background: linear-gradient(180deg,blue,gold,blue);
+    height: 100vh;
+}
+h1{
+    color: white
+}

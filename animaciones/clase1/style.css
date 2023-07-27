@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    background: gold;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+body{
+    background: blue;
+}
+
+
+.cuadrado{
+    background: gold;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    transition: all 2s;
+    border-radius: 50%;
+}
+
+.cuadrado:hover{
+    transform: rotate(45deg) translate(200px);
+    background: red;
+    border-radius: 0;
+}
+
+.circulo{
+    background: gold;
+    width: 400px;
+    height: 200px;
+    margin-top: 100px;
+    border-radius: 50%;
+    animation: circulo 2s infinite;
+}
+
+
+
+@keyframes circulo{
+    0%{
+
+    }
+    50%{
+        transform: translate(100px,50px) rotate(180deg);
+    }
+    70%{
+        transform: translate(200px) rotate(25deg);
+
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
